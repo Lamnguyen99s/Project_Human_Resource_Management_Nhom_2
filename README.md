@@ -3,3 +3,4 @@
 2. Phần mềm giúp quản lý các thông tin cơ bản nhân viên như mã nhân viên, họ tên, chức vụ, mức lương ...
 3. Các phòng ban có 1 hoặc nhiều nhân viên, mỗi phòng ban sẽ có trưởng phòng.
 4. Toàn bộ thông tin được lưu trữ trong cơ sở dữ liệu.
+5. Chức năng của phần mềm
