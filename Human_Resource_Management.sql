@@ -1,5 +1,6 @@
 CREATE DATABASE if NOT EXISTS	hr_management;
 USE hr_management;
+
 -- department table
 CREATE TABLE department(
 	id INT PRIMARY KEY AUTO_INCREMENT,
@@ -24,6 +25,7 @@ CREATE TABLE employee(
 	employee_code VARCHAR(200) NOT NULL UNIQUE,
 	full_name VARCHAR(200) NOT NULL,
 	position VARCHAR(200),
+	gender ENUM('Male', 'Female'),
 	age INT UNSIGNED,
 	phone VARCHAR(200) UNIQUE,
 	email VARCHAR(200) UNIQUE,
@@ -38,18 +40,18 @@ CREATE TABLE employee(
 );
 
 
-INSERT INTO employee(employee_code, full_name, position, age, phone, email, salary, hire_date, end_date)
+INSERT INTO employee(employee_code, full_name, position, gender, age, phone, email, salary, tax, hire_date, end_date)
 VALUES
-		('69798', 'Nguyễn Văn Nam', 'Technical manager', 35, '096721783', 'nam@gmail.com', 50000000, '2019-02-12', NULL),  
-		('69634', 'Nguyễn Văn Minh', 'Technical employee', 26, '076721783', 'minh@gmail.com',20000000, '2020-03-12', NULL),
-		('66778', 'Nguyễn Văn Hải', 'HR Manager', 30, '066721783', 'hai@gmail.com', 50000000, '2022-02-12', NULL),
-		('69777', 'Lê Văn Hải', 'HR employee', 25, '066721784', 'hai1@gmail.com',10000000, '2022-02-12', NULL),
-		('69378', 'Minh Ngọc', 'Production manager', 29, '066721785', 'minh1ngoc@gmail.com',10000000, '2022-02-12', NULL),
-		('69768', 'Ngọc Ánh', 'Marketing employee', 23, '066721786', 'hai2@gmail.com', 20000000, '2022-02-12', NULL),
-		('69788','Nguyễn Sao Mai', 'Production employee', 21, '096721784', 'mai1@gmail.com',10000000, '2023-02-12', NULL),
-		('69758', 'Nguyễn Lấp Lánh', 'Accountant employee', 22, '066721787', 'lap1@gmail.com',10000000, '2021-02-12', NULL),
-		('69375', 'Nguyễn Ánh', 'Business employee', 24, '066721788', 'hai3@gmail.com',10000000, '2022-02-12', NULL),
-		('69778', 'Mạc Hồng', 'Marketing Manager', 36, '066721789', 'hai4@gmail.com', 60000000, '2022-02-12', NULL);
+		('69798', 'Nguyễn Văn Nam', 'Technical manager', 'Male', 35, '096721783', 'nam@gmail.com', 50000000, 12500000, '2019-02-12', NULL),  
+		('69634', 'Nguyễn Văn Minh', 'Technical employee', 'Male', 26, '076721783', 'minh@gmail.com',20000000, 4000000, '2020-03-12', NULL),
+		('66778', 'Nguyễn Văn Hải', 'HR Manager', 'Male', 30, '066721783', 'hai@gmail.com', 50000000, 12500000, '2022-02-12', NULL),
+		('69777', 'Lê Văn Hải', 'HR employee', 'Male', 25, '066721784', 'hai1@gmail.com',10000000, 1000000, '2022-02-12', NULL),
+		('69378', 'Minh Ngọc', 'Production manager', 'Female', 29, '066721785', 'minh1ngoc@gmail.com',10000000, 1000000, '2022-02-12', NULL),
+		('69768', 'Ngọc Ánh', 'Marketing employee', 'Female', 23, '066721786', 'hai2@gmail.com', 20000000, 4000000, '2022-02-12', NULL),
+		('69788','Nguyễn Sao Mai', 'Production employee', 'Female', 21, '096721784', 'mai1@gmail.com',10000000, 1000000, '2023-02-12', NULL),
+		('69758', 'Nguyễn Lấp Lánh', 'Accountant employee', 'Female', 22, '066721787', 'lap1@gmail.com',10000000, 1000000, '2021-02-12', NULL),
+		('69375', 'Nguyễn Ánh', 'Business employee', 'Female', 24, '066721788', 'hai3@gmail.com',10000000, 1000000, '2022-02-12', NULL),
+		('69778', 'Mạc Hồng', 'Marketing Manager', 'Female', 36, '066721789', 'hai4@gmail.com', 60000000, 18000000, '2022-02-12', NULL);
 
 
 -- bảng admin
@@ -66,7 +68,7 @@ VALUES
 		
 
 
-		
+-- SELECT * FROM employee WHERE full_name LIKE '%nam%'
 
 
 
