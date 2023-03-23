@@ -1,6 +1,8 @@
 package com.ntl;
 
-import java.util.Scanner;
+import com.ntl.function.FunctionDepartment;
+import com.ntl.function.FunctionEmployee;
+import com.ntl.function.FunctionHomePage;
 
 import static java.lang.System.*;
 
@@ -53,6 +55,10 @@ public class Program {
                         functionDepartment.updateDataDepartment();
                     } else if(dep == 4) {
                         functionDepartment.deleteDataDepartment();
+                    } else if(dep == 5) {
+                        functionDepartment.transferEmployee();
+                    } else if(dep == 6) {
+                        functionDepartment.addNewEmployee();
                     } else {
                         out.println("Back to Home!");
                         break;
