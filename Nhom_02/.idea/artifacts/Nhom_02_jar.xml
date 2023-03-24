@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Nhom_02:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Nhom_02_jar</output-path>
+    <root id="archive" name="Nhom_02.jar">
+      <element id="module-output" name="Nhom_02" />
+      <element id="extracted-dir" path="D:/JetBrains/guava/guava-31.1-jre.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JetBrains/mysql-connector-java-8.0.20/mysql-connector-java-8.0.20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JetBrains/junit/junit-jupiter-api-5.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JetBrains/junit/junit-platform-commons-1.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JetBrains/junit/junit-platform-engine-1.9.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
