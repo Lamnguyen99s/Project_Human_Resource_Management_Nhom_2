@@ -26,17 +26,22 @@ public class Program {
 
                     // Employee option
                     if(emp == 1) {
+                        out.println("-----  Show All Employee   -----");
                         functionEmployee.showDataEmployee();
                     } else if(emp == 2) {
+                        out.println("-----  Insert Employee -----");
                         functionEmployee.insertDataEmployee();
                     } else if(emp == 3) {
+                        out.println("-----  Update Employee -----");
                         functionEmployee.updateDataEmployee();
                     } else if(emp == 4) {
+                        out.println("-----  Delete Employee -----");
                         functionEmployee.deleteDataEmployee();
                     } else if(emp == 5) {
+                        out.println("-----  Search Employee -----");
                         functionEmployee.searchDataEmployee();
                     } else {
-                        out.println("Back to Home!");
+                        out.println("-----  Back to Home -----");
                         break;
                     }
                 }
@@ -49,16 +54,25 @@ public class Program {
 
                     // Department option
                     if(dep == 1) {
+                        out.println("-----  Show All Department -----");
                         functionDepartment.showDataDepartment();
                     } else if(dep == 2) {
-                        functionDepartment.insertDataDepartment();
+                        out.println("-----  Show Employee By Department -----");
+                        functionDepartment.showEmployerByDepartment();
                     } else if(dep == 3) {
-                        functionDepartment.updateDataDepartment();
+                        out.println("-----  Insert Department -----");
+                        functionDepartment.insertDataDepartment();
                     } else if(dep == 4) {
-                        functionDepartment.deleteDataDepartment();
+                        out.println("-----  Update Department -----");
+                        functionDepartment.updateDataDepartment();
                     } else if(dep == 5) {
-                        functionDepartment.transferEmployee();
+                        out.println("-----  Delete Department -----");
+                        functionDepartment.deleteDataDepartment();
                     } else if(dep == 6) {
+                        out.println("-----  Transfer Employee To Another Department -----");
+                        functionDepartment.transferEmployee();
+                    } else if(dep == 7) {
+                        out.println("-----  Add New Employee To Department  -----");
                         functionDepartment.addNewEmployee();
                     } else {
                         out.println("Back to Home!");

@@ -221,7 +221,7 @@ public class FunctionStatistic {
                     "FROM employee GROUP BY YEAR(hire_date) ORDER BY YEAR(hire_date) ");
 
             out.println("------------------------------------------------");
-            out.printf("%-1s %-3s %-1s %-15s %-1s %-20s %-1s \n", "|", "No.", "|", "Year", "|", "Total Salary", "|");
+            out.printf("%-1s %-3s %-1s %-15s %-1s %-20s %-1s \n", "|", "No.", "|", "Year", "|", "Total Salary / Month", "|");
             out.println("------------------------------------------------");
 
             int number = 0;
